@@ -1,0 +1,21 @@
+User-agent: *
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+# Preview host is noindex until corpusai.co cutover.
+# At publish: Allow: / for * and the AI crawlers; keep Sitemap.
+Sitemap: https://nshempstead1.github.io/corpus-ai-hub/sitemap.xml

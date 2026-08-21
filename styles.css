@@ -1,0 +1,132 @@
+:root {
+  --ink: #12141a;
+  --muted: #4b5160;
+  --bg: #f4f1ea;
+  --paper: #fffcf7;
+  --line: #d9d3c7;
+  --accent: #1c4a38;
+  --accent-2: #16392c;
+  --us: #e8f0eb;
+  --no: #6b2c2c;
+  --font: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.55;
+}
+.wrap { width: min(1040px, calc(100% - 32px)); margin: 0 auto; }
+.top {
+  position: sticky; top: 0; z-index: 5;
+  background: rgba(244,241,234,.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; }
+.brand {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: .01em;
+  line-height: 1.15;
+}
+.brand-line {
+  font-family: var(--sans);
+  font-size: .62rem;
+  font-weight: 650;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 3px;
+}
+nav { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; font-size: .92rem; }
+nav a:hover { color: var(--ink); }
+.nav-cta { color: var(--accent) !important; font-weight: 650; }
+.hero { padding: 56px 0 40px; }
+h1, h2 { font-family: var(--font); line-height: 1.2; margin: 0 0 16px; }
+h1 { font-size: clamp(2rem, 4.2vw, 3.1rem); max-width: 22ch; }
+h2 { font-size: 1.65rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; color: var(--accent); font-weight: 700; margin: 0 0 10px; }
+.lede { font-size: 1.12rem; max-width: 62ch; color: #2a2e38; }
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 22px 0; }
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #f7fff9;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-weight: 650;
+}
+.btn:hover { background: var(--accent-2); }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+.fine { color: var(--muted); font-size: .88rem; }
+section { padding: 48px 0; }
+section.alt { background: var(--paper); border-block: 1px solid var(--line); }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 28px 0 8px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px 22px 20px;
+  text-decoration: none;
+  color: inherit;
+}
+.card.alt-card { background: var(--us); }
+.card h3 {
+  font-family: var(--font);
+  font-size: 1.28rem;
+  margin: 0 0 8px;
+}
+.card .meta {
+  font-size: .88rem;
+  color: var(--accent);
+  font-weight: 650;
+  margin: 0 0 10px;
+}
+.card p { margin: 0 0 14px; color: #2a2e38; flex: 1; }
+.card .go { font-weight: 650; color: var(--accent); }
+.card:hover { border-color: var(--accent); }
+ul.no { padding-left: 1.1rem; }
+ul.no li { margin: 0 0 10px; max-width: 70ch; }
+ul.checks { padding-left: 1.1rem; }
+ul.checks li { margin: 0 0 10px; max-width: 70ch; }
+details { border-bottom: 1px solid var(--line); padding: 12px 0; }
+summary { cursor: pointer; font-weight: 650; }
+details p { margin: 8px 0 0; max-width: 70ch; }
+.article h1 { max-width: 28ch; }
+.article p, .article li { max-width: 70ch; }
+.article h3 { font-family: var(--font); font-size: 1.2rem; margin: 28px 0 8px; }
+.preview-banner {
+  margin: 0;
+  padding: 10px 0;
+  background: #efe4c8;
+  border-bottom: 1px solid var(--line);
+  font-size: .88rem;
+  color: #3d3420;
+}
+footer { padding: 32px 0 48px; color: var(--muted); font-size: .88rem; border-top: 1px solid var(--line); }
+footer a { color: var(--accent); }
+@media (max-width: 800px) {
+  .cards { grid-template-columns: 1fr; }
+  nav .nav-cta { display: none; }
+  h1 { max-width: none; }
+}
