@@ -9,6 +9,8 @@ Corpus AI is the public brand of Corpus Localization LLC. Corpus Localization (c
 - Amazon POA Packet: https://nshempstead1.github.io/amazon-poa/ — $299, 6 business hours. You submit. No Seller Central login.
 - VPAT Sprint: https://nshempstead1.github.io/vpat-sprint/ — $1,995, 5 business days, ≤12 screens. You sign the ACR.
 - Hearing Evidence Binder: https://nshempstead1.github.io/ua-hearing-binder/ — $79, 1 business day. Claimant-side, not B2B.
+- Order Desk (same LLC, different product URL): https://nshempstead1.github.io/order-desk/ — $29/mo Stripe Payment Link SLA watchdog. Not a packet.
+- Watch Desk: https://nshempstead1.github.io/watch-desk/ — $12/mo uptime + OpenClaw $299+$49, Instantly Desk $29, Seller Central Desk $99, Review Blast $39, Rank Grid $19, Card Retry $29.
 
 B2B catalog: https://nshempstead1.github.io/corpus-ai-hub/b2b.html
 
@@ -21,12 +23,15 @@ B2B catalog: https://nshempstead1.github.io/corpus-ai-hub/b2b.html
 
 - Chargeback representment packets (ChargebackKit $19 / Shopify apps own that slot)
 - DSAR fulfillment (needs the customer’s systems; Obtainer-class SaaS)
-- OpenClaw/Claude Code installs, SEO retainers, AI websites
+- Unbounded AI retainers / “your own Claw” mystery boxes (priced OpenClaw install is on Watch Desk)
+- SEO retainers, AI websites
+- Licensed medical practice, food, manufactured physical goods
 
 ## What we do not do
 
-- We do not sell OpenClaw/Claude Code installs or AI retainers.
-- We do not take platform logins.
+- Packet storefronts do not take platform logins. Watch Desk Seller Central Desk is a separate $99/mo SKU.
+- Watch Desk sells OpenClaw install ($299+$49). This hub does not take that payment.
+- We do not sell unbounded AI retainers, licensed medical care, food, or manufactured physical goods.
 - We do not guarantee Google, Amazon, procurement, hearing, or USCIS outcomes.
 - We do not fabricate documents.
 - We are not corpusai.org (preventive medicine) and not corpusai.io (cybersecurity).
