@@ -2,13 +2,26 @@
 
 Corpus AI is the public brand of Corpus Localization LLC. Corpus Localization (certified translations) is a line under Corpus AI. This site is a directory. It does not take payment.
 
-## Lines
+## Lines (live)
 
-- Certified translation (Corpus Localization): https://corpuslocalization.com — $19.99/page eligible standard documents, ATA Corporate Member #M-189351, USCIS-purpose Certificate of Accuracy, 24-hour standard delivery.
+- Certified translation (Corpus Localization): https://corpuslocalization.com — $19.99/page eligible standard documents, ATA Corporate Member #M-189351, USCIS-purpose Certificate of Accuracy, 24-hour standard delivery. B2B: law firms, HR, volume.
 - GBP Reinstatement Packet: https://nshempstead1.github.io/corpus-ai/ — $149, 4 business hours. You submit. No Google login.
 - Amazon POA Packet: https://nshempstead1.github.io/amazon-poa/ — $299, 6 business hours. You submit. No Seller Central login.
 - VPAT Sprint: https://nshempstead1.github.io/vpat-sprint/ — $1,995, 5 business days, ≤12 screens. You sign the ACR.
-- Hearing Evidence Binder: https://nshempstead1.github.io/ua-hearing-binder/ — $79, 1 business day. Self-help document prep, not legal advice, not filing.
+- Hearing Evidence Binder: https://nshempstead1.github.io/ua-hearing-binder/ — $79, 1 business day. Claimant-side, not B2B.
+
+B2B catalog: https://nshempstead1.github.io/corpus-ai-hub/b2b.html
+
+## Next B2B (not live, no payment)
+
+- Google Ads appeal packet — planned $249. Policy Appeal Form file. Not Merchant Center DFY rebuilds.
+- Stripe / Shopify Payments KYC packet — planned $199. Exact-match docs + in-thread letter. No logins.
+
+## Not sold
+
+- Chargeback representment packets (ChargebackKit $19 / Shopify apps own that slot)
+- DSAR fulfillment (needs the customer’s systems; Obtainer-class SaaS)
+- OpenClaw/Claude Code installs, SEO retainers, AI websites
 
 ## What we do not do
 
