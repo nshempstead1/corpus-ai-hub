@@ -14,9 +14,9 @@
   <meta property="og:site_name" content="Corpus">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="corpus-mark.png">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -49,25 +49,37 @@
   <main>
     <section class="hero">
       <div class="wrap">
-        <div class="hero-grid">
-          <div>
-            <p class="eyebrow">Software · Services · Growth · Localization</p>
-            <h1>The systems your business runs on, built and watched for you.</h1>
-            <p class="lede">Corpus is one shop with four lines: subscription software you can buy today, fixed-price services delivered on a clock, growth work for small businesses, and certified translations through <strong>Corpus Localization</strong>. Named prices. Named deadlines. No unbounded retainers.</p>
-            <p class="cta-row">
-              <a class="btn" href="products">Browse products</a>
-              <a class="btn ghost" href="growth">Grow my business</a>
-            </p>
-            <p class="fine">Public brand of Corpus Localization LLC (New Jersey). Not affiliated with Google, Amazon, Stripe, or USCIS.</p>
-          </div>
-          <div class="reveal d1" aria-hidden="true">
-            <div class="console">
-              <div class="bar"><span class="dot2"></span><span class="dot2"></span><span class="dot2"></span><span>CORPUS DESKS — LIVE FEED</span></div>
-              <div class="body2">
+        <div class="hero-center">
+          <p class="eyebrow">Software · Services · Growth · Localization</p>
+          <h1>The systems your business runs on, <span class="grad">built and watched</span> for you.</h1>
+          <p class="lede">Corpus is one shop with four lines: subscription software you can buy today, fixed-price services delivered on a clock, growth work for small businesses, and certified translations through <strong>Corpus Localization</strong>. Named prices. Named deadlines. No unbounded retainers.</p>
+          <p class="cta-row">
+            <a class="btn" href="products">Browse products</a>
+            <a class="btn ghost" href="growth">Grow my business</a>
+          </p>
+          <p class="fine">Public brand of Corpus Localization LLC (New Jersey). Not affiliated with Google, Amazon, Stripe, or USCIS.</p>
+        </div>
+        <div class="appwin-holder reveal" aria-hidden="true">
+          <div class="appwin">
+            <div class="chrome"><i></i><i></i><i></i><span class="url">corpus — desks · live operations</span></div>
+            <div class="lay">
+              <div class="side">
+                <a class="on" href="#">Overview</a>
+                <a href="#">Order Desk</a>
+                <a href="#">Watch Desk</a>
+                <a href="#">Applylane</a>
+                <a href="#">Rank Grid</a>
+                <a href="#">Alerts</a>
+              </div>
+              <div class="main2">
+                <div class="kpis">
+                  <div class="kpi"><small>Uptime checks</small><b>200 OK<em>60s cycle</em></b></div>
+                  <div class="kpi"><small>SLA clock</small><b>3h 41m<em>of 4h</em></b></div>
+                  <div class="kpi"><small>Alerts today</small><b>2<em>→ Telegram</em></b></div>
+                </div>
+                <svg class="spark" viewBox="0 0 400 46" preserveAspectRatio="none"><polyline points="0,36 30,32 60,34 90,26 120,29 150,20 180,24 210,15 240,19 270,12 300,16 330,8 360,12 400,5"/></svg>
                 <div class="alertline"><span class="pulse"></span> Stripe payment received — SLA clock started <small>60s alert</small></div>
-                <div class="alertline ok"><span class="pulse"></span> corpushq.co uptime + SSL — all checks passing <small>every 60s</small></div>
                 <div class="alertline warn"><span class="pulse"></span> Google listing fingerprint changed — review ping <small>≤15 min</small></div>
-                <div class="meter"><i></i></div>
               </div>
             </div>
           </div>
@@ -88,30 +100,54 @@
           <p class="kicker">What we sell</p>
           <h2>Four lines. One accountable shop.</h2>
         </div>
-        <div class="cards">
-          <a class="card reveal" href="products">
-            <p class="meta">Subscriptions · from $12/mo</p>
-            <h3>Products</h3>
-            <p>Built software your business subscribes to and uses the same day. Order Desk watches your Stripe payments and SLAs; Watch Desk watches uptime, listings, and reviews; Applylane applies to jobs for you. Checkout is on this site.</p>
+        <div class="bento">
+          <a class="b-card w3 reveal" href="products">
+            <span class="meta">Products · from $12/mo</span>
+            <h3>Software that watches your business</h3>
+            <p>Order Desk guards your Stripe payments and SLAs. Watch Desk guards uptime, listings, and reviews. Applylane applies to jobs for you. Subscribe and connect the same day — checkout is on this site.</p>
+            <div class="b-visual">
+              <div class="alertline"><span class="pulse"></span> corpushq.co · SSL · listings — all passing <small>every 60s</small></div>
+            </div>
             <span class="go">See products &amp; pricing →</span>
           </a>
-          <a class="card reveal d1" href="growth">
-            <p class="meta">Small-business growth</p>
-            <h3>Growth</h3>
-            <p>Landing pages that load fast and convert, SEO and AI-search (GEO) optimization, Google Ads tune-ups, and lead-source setup — scoped as fixed deliverables with a written quote in one business day.</p>
+          <a class="b-card w3 reveal d1" href="growth">
+            <span class="meta">Growth · quoted in 1 day</span>
+            <h3>Marketing you can measure</h3>
+            <p>Landing pages, SEO and AI-search (GEO) optimization, Google Ads tune-ups, lead sources — fixed scopes with a written quote in one business day. No retainers.</p>
+            <div class="b-visual gridcells" aria-hidden="true">
+              <i></i><i class="c2"></i><i class="c3"></i><i class="c2"></i><i class="c4"></i><i class="c5"></i><i class="c4"></i>
+              <i class="c2"></i><i></i><i class="c2"></i><i class="c3"></i><i class="c3"></i><i class="c4"></i><i class="c5"></i>
+              <i class="c3"></i><i class="c2"></i><i></i><i class="c2"></i><i class="c4"></i><i class="c5"></i><i class="c5"></i>
+            </div>
             <span class="go">See growth services →</span>
           </a>
-          <a class="card reveal d2" href="services">
-            <p class="meta">Fixed price · SLA on the label</p>
-            <h3>Services</h3>
-            <p>Deadline files a platform already asked you for: Google Business Profile appeal folders, Amazon Plans of Action, accessibility conformance reports, hearing binders. You review, you submit.</p>
+          <a class="b-card w2 reveal" href="services">
+            <span class="meta">Services · SLA on the label</span>
+            <h3>Deadline files on a clock</h3>
+            <p>GBP appeal folders, Amazon Plans of Action, VPAT/ACR reports, hearing binders. You review, you submit.</p>
+            <div class="b-visual slatimer">
+              <svg class="ring" width="62" height="62" viewBox="0 0 62 62"><circle class="track" cx="31" cy="31" r="28"/><circle class="val" cx="31" cy="31" r="28"/></svg>
+              <div><b>4h 00m</b><span>GBP packet SLA</span></div>
+            </div>
             <span class="go">See services →</span>
           </a>
-          <a class="card reveal d3" href="localization">
-            <p class="meta">Corpus Localization · $19.99/page</p>
-            <h3>Localization</h3>
-            <p>Certified translations in 65+ languages with a signed Certificate of Accuracy and 24-hour standard delivery. USCIS-purpose wording. Our longest-running line.</p>
-            <span class="go">About the localization line →</span>
+          <a class="b-card w2 reveal d1" href="localization">
+            <span class="meta">Localization · $19.99/page</span>
+            <h3>Certified translations in 24h</h3>
+            <p>Signed Certificate of Accuracy, USCIS-purpose wording. Our longest-running line.</p>
+            <div class="b-visual langchips" aria-hidden="true">
+              <span>ES</span><span>PT</span><span>FR</span><span>AR</span><span>ZH</span><span>UK</span><span>65+ languages</span>
+            </div>
+            <span class="go">About the line →</span>
+          </a>
+          <a class="b-card w2 reveal d2" href="/apply/">
+            <span class="meta">New · $49 one-time</span>
+            <h3>Applylane</h3>
+            <p>50 job applications submitted for you on Greenhouse, Lever, and Ashby — credit back on any failed submit.</p>
+            <div class="b-visual">
+              <div class="alertline"><span class="pulse"></span> Application submitted — Lever <small>credit 12/50</small></div>
+            </div>
+            <span class="go">See Applylane →</span>
           </a>
         </div>
       </div>

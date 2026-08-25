@@ -6,6 +6,16 @@
     onScroll();
   }
 
+  // spotlight hover on cards
+  var spots = document.querySelectorAll(".card, .b-card");
+  spots.forEach(function (el) {
+    el.addEventListener("pointermove", function (e) {
+      var r = el.getBoundingClientRect();
+      el.style.setProperty("--mx", (e.clientX - r.left) + "px");
+      el.style.setProperty("--my", (e.clientY - r.top) + "px");
+    });
+  });
+
   var nodes = document.querySelectorAll(".reveal");
   if (!nodes.length) return;
   if (!("IntersectionObserver" in window) ||
