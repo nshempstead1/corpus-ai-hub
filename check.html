@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Certified translation check | Corpus</title>
+  <meta name="description" content="60-second check for certified document translation. Clear standard docs route to $19.99/page checkout; multi-file or unclear scans go to a human quote.">
+  <link rel="canonical" href="https://corpushq.co/check">
+  <meta name="robots" content="noindex,follow">
+  <meta property="og:title" content="Corpus — certified translation check">
+  <meta property="og:description" content="Deadline coming up? Find the right certified translation path in 60 seconds.">
+  <meta property="og:url" content="https://corpushq.co/check">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Corpus">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="corpus-mark.png">
+  <link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body class="funnel">
+  <a class="skip" href="#quiz">Skip to check</a>
+
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="./"><img class="brand-mark" src="corpus-mark.png" alt="Corpus" width="27" height="26">CORPUS</a>
+      <nav>
+        <a href="localization">Localization</a>
+        <a class="nav-cta" href="https://corpuslocalization.com/start-your-order/?utm_source=meta&utm_medium=paid&utm_campaign=quiz&utm_content=nav">Order — $19.99/page</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero funnel-hero" id="top" aria-label="Corpus Localization check">
+    <div class="wrap">
+      <p class="brand-hero">Corpus Localization</p>
+      <h1>Need a certified translation before you file?</h1>
+      <p class="lede">Sixty seconds. Clear single documents go to order at $19.99/page. Multi-file or unclear scans go to a human quote.</p>
+      <p class="cta-row">
+        <button type="button" class="btn" id="start-quiz">Start the 60-second check</button>
+        <a class="btn ghost" href="https://corpuslocalization.com/start-your-order/?utm_source=meta&utm_medium=paid&utm_campaign=quiz&utm_content=hero-direct">Order now — $19.99/page</a>
+      </p>
+      <p class="fine">Same company as Corpus. Checkout stays on corpuslocalization.com. Not affiliated with USCIS.</p>
+    </div>
+  </section>
+
+  <main class="quiz" id="quiz" aria-live="polite" hidden>
+    <div class="wrap quiz-wrap">
+      <div class="quiz-top">
+        <p class="quiz-kicker">Corpus Localization · certified translation</p>
+        <div class="progress" aria-hidden="true"><i id="progress-bar"></i></div>
+      </div>
+
+      <section class="step on" data-step="1" aria-labelledby="q1">
+        <h2 id="q1">What are you translating for?</h2>
+        <p class="hint">Pick the closest match.</p>
+        <div class="options">
+          <button type="button" class="option" data-key="purpose" data-value="uscis" data-label="USCIS / immigration filing">
+            <strong>USCIS / immigration filing</strong>
+            <span>Birth, marriage, divorce, police, passport pages</span>
+          </button>
+          <button type="button" class="option" data-key="purpose" data-value="school" data-label="School / university">
+            <strong>School or university</strong>
+            <span>Diplomas, transcripts, admissions packets</span>
+          </button>
+          <button type="button" class="option" data-key="purpose" data-value="work" data-label="Employer / HR / licensing">
+            <strong>Employer, HR, or licensing</strong>
+            <span>Credentials and workplace document sets</span>
+          </button>
+          <button type="button" class="option" data-key="purpose" data-value="other" data-label="Court / other official use">
+            <strong>Court or other official use</strong>
+            <span>We’ll confirm the receiving-office path on quote if needed</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="step" data-step="2" aria-labelledby="q2" hidden>
+        <h2 id="q2">How many documents?</h2>
+        <p class="hint">Count separate files, not pages.</p>
+        <div class="options">
+          <button type="button" class="option" data-key="count" data-value="1" data-label="1 document">
+            <strong>1 document</strong>
+            <span>Usually fastest path to checkout</span>
+          </button>
+          <button type="button" class="option" data-key="count" data-value="2-3" data-label="2–3 documents">
+            <strong>2–3 documents</strong>
+            <span>Still often orderable if scans are clear</span>
+          </button>
+          <button type="button" class="option" data-key="count" data-value="4+" data-label="4+ documents">
+            <strong>4 or more</strong>
+            <span>Better as a quote so scope is confirmed first</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="step" data-step="3" aria-labelledby="q3" hidden>
+        <h2 id="q3">How clear is the scan or photo?</h2>
+        <p class="hint">Edges, stamps, and seals must be readable.</p>
+        <div class="options">
+          <button type="button" class="option" data-key="clarity" data-value="clear" data-label="Clear and readable">
+            <strong>Clear and readable</strong>
+            <span>Phone photo is fine if every edge shows</span>
+          </button>
+          <button type="button" class="option" data-key="clarity" data-value="mixed" data-label="Some pages unclear">
+            <strong>Some pages are blurry or cut off</strong>
+            <span>We’ll review before you pay</span>
+          </button>
+          <button type="button" class="option" data-key="clarity" data-value="handwritten" data-label="Handwritten or stamped heavily">
+            <strong>Handwritten or heavy stamps</strong>
+            <span>Quote review first</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="step" data-step="4" aria-labelledby="q4" hidden>
+        <h2 id="q4">When do you need it?</h2>
+        <p class="hint">Standard clear orders: 24-hour delivery after confirmation.</p>
+        <div class="options">
+          <button type="button" class="option" data-key="deadline" data-value="today" data-label="Today / tomorrow">
+            <strong>Today or tomorrow</strong>
+            <span>Start the order now if the file is clear</span>
+          </button>
+          <button type="button" class="option" data-key="deadline" data-value="week" data-label="This week">
+            <strong>This week</strong>
+            <span>Still order — don’t wait until the night before</span>
+          </button>
+          <button type="button" class="option" data-key="deadline" data-value="flexible" data-label="Flexible">
+            <strong>Flexible</strong>
+            <span>Same factory; less panic</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="step" data-step="5" aria-labelledby="result-title" hidden>
+        <div class="result" id="result">
+          <p class="eyebrow" id="result-eyebrow">Your path</p>
+          <h2 id="result-title">Ready</h2>
+          <p class="price" id="result-price" hidden>$19.99<small>/page</small></p>
+          <p class="fine" id="result-copy"></p>
+          <ul class="summary" id="result-summary"></ul>
+          <p class="cta-row">
+            <a class="btn" id="result-cta" href="#">Continue</a>
+          </p>
+          <p class="fine">Not affiliated with USCIS. We certify the translation; agencies decide filings. ATA corporate member #M-189351.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="legal" style="border:0;padding:0;margin:0">
+        <a href="./">Corpus</a> ·
+        <a href="localization">Localization</a> ·
+        <a href="https://corpuslocalization.com">corpuslocalization.com</a> ·
+        <a href="terms">Terms</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var answers = {};
+      var labels = {};
+      var totalSteps = 4;
+      var ORDER = "https://corpuslocalization.com/start-your-order/";
+      var QUOTE = "https://corpuslocalization.com/get-a-quote/";
+      var hero = document.getElementById("top");
+      var quiz = document.getElementById("quiz");
+      var bar = document.getElementById("progress-bar");
+
+      function utm(base, content) {
+        var u = new URL(base);
+        u.searchParams.set("utm_source", "meta");
+        u.searchParams.set("utm_medium", "paid");
+        u.searchParams.set("utm_campaign", "quiz");
+        u.searchParams.set("utm_content", content);
+        u.searchParams.set("purpose", answers.purpose || "");
+        u.searchParams.set("docs", answers.count || "");
+        u.searchParams.set("clarity", answers.clarity || "");
+        u.searchParams.set("deadline", answers.deadline || "");
+        return u.toString();
+      }
+
+      function showStep(n) {
+        document.querySelectorAll(".step").forEach(function (el) {
+          var on = Number(el.getAttribute("data-step")) === n;
+          el.hidden = !on;
+          el.classList.toggle("on", on);
+        });
+        var pct = n > totalSteps ? 100 : Math.min(100, Math.round(((n - 1) / totalSteps) * 100));
+        bar.style.width = pct + "%";
+      }
+
+      function route() {
+        var multi = answers.count === "4+";
+        return (!multi && answers.clarity === "clear") ? "order" : "quote";
+      }
+
+      function finish() {
+        var path = route();
+        var summary = document.getElementById("result-summary");
+        summary.innerHTML = "";
+        [
+          ["Purpose", labels.purpose],
+          ["Documents", labels.count],
+          ["Scan quality", labels.clarity],
+          ["Timing", labels.deadline]
+        ].forEach(function (row) {
+          var li = document.createElement("li");
+          li.innerHTML = "<span>" + row[0] + "</span><span>" + row[1] + "</span>";
+          summary.appendChild(li);
+        });
+        var eyebrow = document.getElementById("result-eyebrow");
+        var title = document.getElementById("result-title");
+        var price = document.getElementById("result-price");
+        var copy = document.getElementById("result-copy");
+        var cta = document.getElementById("result-cta");
+        if (path === "order") {
+          eyebrow.textContent = "Order path";
+          title.textContent = "Clear standard docs → checkout";
+          price.hidden = false;
+          copy.textContent = "Eligible standard certified translations start at $19.99/page with a signed Certificate of Accuracy. Most clear files deliver within 24 hours after confirmation.";
+          cta.textContent = "Start your order — $19.99/page";
+          cta.href = utm(ORDER, "quiz-order");
+        } else {
+          eyebrow.textContent = "Quote path";
+          title.textContent = "We’ll confirm scope before you pay";
+          price.hidden = true;
+          copy.textContent = "Multi-file packets, unclear scans, or heavy stamps go to quote review first (answered within 1 hour Mon–Fri 9–6 ET).";
+          cta.textContent = "Get a free quote";
+          cta.href = utm(QUOTE, "quiz-quote");
+        }
+        showStep(5);
+        if (window.fbq) window.fbq("trackCustom", "QuizComplete", { path: path, purpose: answers.purpose });
+      }
+
+      document.getElementById("start-quiz").addEventListener("click", function () {
+        hero.hidden = true;
+        quiz.hidden = false;
+        showStep(1);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        if (window.fbq) window.fbq("trackCustom", "QuizStart");
+      });
+
+      document.querySelectorAll(".option").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var step = Number(btn.closest(".step").getAttribute("data-step"));
+          answers[btn.getAttribute("data-key")] = btn.getAttribute("data-value");
+          labels[btn.getAttribute("data-key")] = btn.getAttribute("data-label");
+          if (step >= totalSteps) finish();
+          else showStep(step + 1);
+        });
+      });
+    })();
+  </script>
+  <!-- Owner: paste Meta Pixel base code before spend. -->
+</body>
+</html>

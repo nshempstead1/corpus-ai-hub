@@ -199,3 +199,71 @@ footer .legal { border-top: 1px solid var(--line); padding-top: 20px; font-size:
   .hero { padding: 56px 0 48px; }
   .trust { grid-template-columns: 1fr; }
 }
+
+/* ---------- Meta quiz funnel (/check) ---------- */
+.skip {
+  position: absolute; left: -999px; top: 12px;
+}
+.skip:focus { left: 12px; z-index: 30; background: #fff; padding: 8px 12px; border-radius: 6px; }
+.funnel-hero { min-height: calc(100svh - 64px); display: grid; align-content: center; }
+.brand-hero {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.9rem, 5vw, 2.8rem);
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  margin: 0 0 18px;
+  max-width: 14ch;
+  line-height: 1.05;
+}
+.funnel-hero h1 {
+  font-size: clamp(1.35rem, 3.2vw, 1.85rem);
+  max-width: 22ch;
+  font-family: var(--font);
+  font-weight: 700;
+}
+.quiz { padding: 28px 0 72px; min-height: 70svh; }
+.quiz-wrap { width: min(720px, calc(100% - 40px)); }
+.quiz-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
+.quiz-kicker {
+  margin: 0;
+  font-size: .78rem; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--accent-ink);
+}
+.progress {
+  flex: 1; max-width: 160px; height: 4px; border-radius: 99px;
+  background: var(--line); overflow: hidden; margin-left: auto;
+}
+.progress > i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s ease; }
+.step h2 { margin-bottom: 6px; }
+.hint { color: var(--muted); margin: 0 0 18px; }
+.options { display: grid; gap: 10px; }
+.option {
+  width: 100%; text-align: left; cursor: pointer;
+  border: 1px solid var(--line); background: #fff; border-radius: 12px;
+  padding: 14px 16px; font: inherit; color: var(--ink);
+  transition: border-color .15s ease, box-shadow .15s ease, transform .12s ease;
+}
+.option strong { display: block; font-weight: 750; margin-bottom: 2px; }
+.option span { color: var(--muted); font-size: .92rem; }
+.option:hover, .option:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+  outline: none; transform: translateY(-1px);
+}
+.result {
+  background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 24px;
+}
+.result .eyebrow {
+  display: inline-block; margin-bottom: 10px;
+}
+.summary { list-style: none; padding: 0; margin: 0 0 18px; }
+.summary li {
+  display: flex; justify-content: space-between; gap: 12px;
+  padding: 10px 0; border-bottom: 1px solid var(--line); font-size: .95rem;
+}
+.summary li span:last-child { font-weight: 650; color: var(--ink); text-align: right; }
+button.btn { border: 0; cursor: pointer; font: inherit; }
+@media (prefers-reduced-motion: reduce) {
+  .option, .progress > i, .btn { transition: none; }
+}

@@ -6,4 +6,5 @@
   <url><loc>https://corpushq.co/services</loc></url>
   <url><loc>https://corpushq.co/localization</loc></url>
   <url><loc>https://corpushq.co/about</loc></url>
+  <!-- /check is noindex Meta landing; omitted from sitemap on purpose -->
 </urlset>
