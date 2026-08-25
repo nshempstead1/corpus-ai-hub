@@ -12,7 +12,7 @@ Corpus AI is the public brand of Corpus Localization LLC. Corpus Localization (c
 - Order Desk (same LLC, different product URL): https://nshempstead1.github.io/order-desk/ — $29/mo Stripe Payment Link SLA watchdog. Not a packet.
 - Watch Desk: https://nshempstead1.github.io/watch-desk/ — $12/mo uptime + OpenClaw $299+$49, Instantly Desk $29, Seller Central Desk $99, Review Blast $39, Rank Grid $19, Card Retry $29.
 
-B2B catalog: https://nshempstead1.github.io/corpus-ai-hub/b2b.html
+B2B catalog: https://corpushq.co/b2b.html
 
 ## Next B2B (not live, no payment)
 

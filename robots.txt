@@ -16,4 +16,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://nshempstead1.github.io/corpus-ai-hub/sitemap.xml
+Sitemap: https://corpushq.co/sitemap.xml
