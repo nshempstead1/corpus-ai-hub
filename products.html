@@ -16,19 +16,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="corpus-mark.png">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <meta name="theme-color" content="#090e1a">
+  <meta name="color-scheme" content="dark">
+  <link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
   <header class="top">
     <div class="wrap bar">
       <a class="brand" href="./"><img class="brand-mark" src="corpus-mark.png" alt="Corpus" width="27" height="26">CORPUS</a>
-      <nav>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+      <nav id="site-nav">
         <a class="active" href="products">Products</a>
         <a href="growth">Growth</a>
         <a href="services">Services</a>
         <a href="localization">Localization</a>
         <a href="about">About</a>
         <a class="nav-cta" href="#pricing">Subscribe</a>
+        <button class="nav-cmd" type="button" data-cmdk aria-label="Open command menu">⌘K</button>
       </nav>
     </div>
   </header>
@@ -44,7 +48,7 @@
 
     <section id="pricing">
       <div class="wrap">
-        <div class="pricing">
+        <div class="pricing" data-kind="sub">
           <div class="price-card featured">
             <p class="plan">Order Desk</p>
             <p class="for">Never let a paid order sit unnoticed</p>
@@ -86,67 +90,81 @@
     <section class="alt" id="addons">
       <div class="wrap">
         <div class="section-head reveal">
-          <p class="kicker">Watch Desk add-ons</p>
+          <p class="kicker">One-time products and add-on desks</p>
           <h2>Specialist desks with the same rules: named price, bounded job.</h2>
-          <p>Each add-on is a specific, scoped job. Subscribe directly, or ask us first at <a href="mailto:intake@corpuslocalization.com">intake@corpuslocalization.com</a> if you're unsure which fits.</p>
+          <p>Each item is a specific, scoped job. Buy directly, or ask us first at <a href="mailto:intake@corpuslocalization.com">intake@corpuslocalization.com</a> if you're unsure which fits.</p>
         </div>
-        <div class="table-scroll">
-        <table class="addons">
-          <tr><th>Desk</th><th>Price</th><th>The job</th><th></th></tr>
-          <tr>
-            <td class="sku">OpenClaw install</td>
-            <td class="p">$299 setup<br>+ $49/mo</td>
-            <td>Bounded 48-hour setup of your own OpenClaw agent (our VPS or yours) with paired Telegram, then named keep-alive pings within 15 minutes. Not a managed-AI mystery box; we don't guarantee model uptime.</td>
-            <td><a class="buy" href="https://buy.stripe.com/00w5kv7dL3j39tpdg3co11s">Setup →</a><br><a class="buy" href="https://buy.stripe.com/fZu9ALdC99HrbBx3Ftco11t">Keep-alive →</a></td>
-          </tr>
-          <tr>
-            <td class="sku">Instantly Desk</td>
-            <td class="p">$29/mo</td>
-            <td>Watches your Instantly cold-email infrastructure: campaign stalls, domain and warm-up health, reply detection gaps. Alerts, not sending — we never send cold email for you.</td>
-            <td><a class="buy" href="https://buy.stripe.com/28E4gr8hPbPz6hddg3co11u">Subscribe →</a></td>
-          </tr>
-          <tr>
-            <td class="sku">Seller Central Desk</td>
-            <td class="p">$99/mo</td>
-            <td>Amazon Seller Central watch: account-health flags, performance notifications, buy-box loss. Requires delegated access you own and can revoke; terms on the Watch Desk site. Not a reinstatement guarantee.</td>
-            <td><a class="buy" href="https://buy.stripe.com/aFa5kv7dLdXH3511xlco11v">Subscribe →</a></td>
-          </tr>
-          <tr>
-            <td class="sku">Review Blast</td>
-            <td class="p">$39/mo</td>
-            <td>Review-request sends to your own customer list — a consent column is required, and we refuse lists without one. No fake reviews, no gating.</td>
-            <td><a class="buy" href="https://buy.stripe.com/9B64gr41z1aV6hd2Bpco11w">Subscribe →</a></td>
-          </tr>
-          <tr>
-            <td class="sku">Rank Grid</td>
-            <td class="p">$19/mo</td>
-            <td>Local rank-grid snapshots for your keywords on a schedule, via a paid SERP API (no proxy farms). Useful with the <a href="growth">Growth line</a>.</td>
-            <td><a class="buy" href="https://buy.stripe.com/eVqbITfKhcTD4958ZNco11x">Subscribe →</a></td>
-          </tr>
-          <tr>
-            <td class="sku">Card Retry</td>
-            <td class="p">$29/mo</td>
-            <td>Failed-payment watch on your Stripe subscriptions with retry nudges, so involuntary churn gets a second chance.</td>
-            <td><a class="buy" href="https://buy.stripe.com/4gM14f69HcTD3511xlco11y">Subscribe →</a></td>
-          </tr>
-        </table>
+        <div class="filters" data-filter-bar role="group" aria-label="Filter catalog">
+          <button type="button" class="on" data-filter="all">All</button>
+          <button type="button" data-filter="sub">Subscriptions</button>
+          <button type="button" data-filter="once">One-time</button>
+          <button type="button" data-filter="addon">Add-ons</button>
         </div>
-      </div>
-    </section>
-
-    <section id="more-products">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <p class="kicker">New Corpus line</p>
-          <h2>Applylane — auto-apply while you prep interviews.</h2>
-        </div>
-        <div class="cards two">
-          <a class="card" href="/apply/">
-            <p class="meta">$49 one-time · 50 credits + 30-day Premium</p>
+        <div class="sku-grid">
+          <article class="sku-card" data-kind="once">
+            <p class="meta">One-time · $49</p>
             <h3>Applylane Starter</h3>
+            <p class="price">$49<small> · 50 credits + 30-day Premium</small></p>
             <p>We match roles to your profile and submit applications on Greenhouse, Lever, and Ashby boards for you — a credit is refunded on any failed submit. Human-checked until the automation earns your trust.</p>
-            <span class="go">See Applylane →</span>
-          </a>
+            <p class="cta-row">
+              <a class="buy" href="/apply/">See Applylane →</a>
+            </p>
+          </article>
+          <article class="sku-card" data-kind="once">
+            <p class="meta">One-time · setup + keep-alive</p>
+            <h3>OpenClaw install</h3>
+            <p class="price">$299<small> + $49/mo</small></p>
+            <p>Bounded 48-hour setup of your own OpenClaw agent (our VPS or yours) with paired Telegram, then named keep-alive pings within 15 minutes. Not a managed-AI mystery box; we don't guarantee model uptime.</p>
+            <p class="cta-row">
+              <a class="buy" href="https://buy.stripe.com/00w5kv7dL3j39tpdg3co11s">Setup →</a>
+              <a class="buy" href="https://buy.stripe.com/fZu9ALdC99HrbBx3Ftco11t">Keep-alive →</a>
+            </p>
+          </article>
+          <article class="sku-card" data-kind="addon">
+            <p class="meta">Add-on · $29/mo</p>
+            <h3>Instantly Desk</h3>
+            <p class="price">$29<small>/mo</small></p>
+            <p>Watches your Instantly cold-email infrastructure: campaign stalls, domain and warm-up health, reply detection gaps. Alerts, not sending — we never send cold email for you.</p>
+            <p class="cta-row">
+              <a class="buy" href="https://buy.stripe.com/28E4gr8hPbPz6hddg3co11u">Subscribe →</a>
+            </p>
+          </article>
+          <article class="sku-card" data-kind="addon">
+            <p class="meta">Add-on · $99/mo</p>
+            <h3>Seller Central Desk</h3>
+            <p class="price">$99<small>/mo</small></p>
+            <p>Amazon Seller Central watch: account-health flags, performance notifications, buy-box loss. Requires delegated access you own and can revoke; terms on the Watch Desk site. Not a reinstatement guarantee.</p>
+            <p class="cta-row">
+              <a class="buy" href="https://buy.stripe.com/aFa5kv7dLdXH3511xlco11v">Subscribe →</a>
+            </p>
+          </article>
+          <article class="sku-card" data-kind="addon">
+            <p class="meta">Add-on · $39/mo</p>
+            <h3>Review Blast</h3>
+            <p class="price">$39<small>/mo</small></p>
+            <p>Review-request sends to your own customer list — a consent column is required, and we refuse lists without one. No fake reviews, no gating.</p>
+            <p class="cta-row">
+              <a class="buy" href="https://buy.stripe.com/9B64gr41z1aV6hd2Bpco11w">Subscribe →</a>
+            </p>
+          </article>
+          <article class="sku-card" data-kind="addon">
+            <p class="meta">Add-on · $19/mo</p>
+            <h3>Rank Grid</h3>
+            <p class="price">$19<small>/mo</small></p>
+            <p>Local rank-grid snapshots for your keywords on a schedule, via a paid SERP API (no proxy farms). Useful with the <a href="growth">Growth line</a>.</p>
+            <p class="cta-row">
+              <a class="buy" href="https://buy.stripe.com/eVqbITfKhcTD4958ZNco11x">Subscribe →</a>
+            </p>
+          </article>
+          <article class="sku-card" data-kind="addon">
+            <p class="meta">Add-on · $29/mo</p>
+            <h3>Card Retry</h3>
+            <p class="price">$29<small>/mo</small></p>
+            <p>Failed-payment watch on your Stripe subscriptions with retry nudges, so involuntary churn gets a second chance.</p>
+            <p class="cta-row">
+              <a class="buy" href="https://buy.stripe.com/4gM14f69HcTD3511xlco11y">Subscribe →</a>
+            </p>
+          </article>
         </div>
       </div>
     </section>
@@ -204,6 +222,15 @@
       <p class="legal">Corpus is the public brand of Corpus Localization LLC. Not affiliated with Google LLC, Amazon.com, Inc., Stripe, Inc., Instantly, or OpenClaw. Monitoring alerts are a notification service, not an outcome guarantee.</p>
     </div>
   </footer>
-  <script src="motion.js" defer></script>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="pointer-glow" aria-hidden="true"></div>
+  <div class="cmdk" id="cmdk" hidden>
+    <div class="cmdk-panel" role="dialog" aria-modal="true" aria-label="Command menu">
+      <input class="cmdk-input" type="search" placeholder="Jump to a product, page, or action…" aria-label="Search">
+      <ul class="cmdk-list"></ul>
+      <p class="cmdk-hint">↑↓ to move · enter to open · esc to close</p>
+    </div>
+  </div>
+  <script src="motion.js?v=10" defer></script>
 </body>
 </html>

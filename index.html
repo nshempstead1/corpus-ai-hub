@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Corpus — software, services, and growth for small business</title>
-  <meta name="description" content="Corpus builds and runs the systems small businesses depend on: subscription monitoring software you can buy today, fixed-price deadline-file services, small-business growth work, and certified translations through Corpus Localization.">
+  <title>Corpus — AI systems, software, and services you can buy today</title>
+  <meta name="description" content="Corpus is an AI company that ships: subscription monitoring software with checkout today, fixed-price deadline-file services, small-business growth work, and certified translations through Corpus Localization.">
   <link rel="canonical" href="https://corpushq.co/">
   <meta name="robots" content="index,follow">
-  <meta property="og:title" content="Corpus — software, services, and growth for small business">
+  <meta name="theme-color" content="#090e1a">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Corpus — AI systems you can buy today">
   <meta property="og:description" content="Subscription products with checkout today, deadline-file services with named prices and SLAs, growth work, and certified translations.">
   <meta property="og:url" content="https://corpushq.co/">
   <meta property="og:type" content="website">
@@ -16,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="corpus-mark.png">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=10">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,54 +34,131 @@
   </script>
 </head>
 <body>
+  <a class="skip" href="#lines">Skip to content</a>
   <header class="top">
     <div class="wrap bar">
       <a class="brand" href="./"><img class="brand-mark" src="corpus-mark.png" alt="Corpus" width="27" height="26">CORPUS</a>
-      <nav>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+      <nav id="site-nav">
         <a href="products">Products</a>
         <a href="growth">Growth</a>
         <a href="services">Services</a>
         <a href="localization">Localization</a>
         <a href="about">About</a>
         <a class="nav-cta" href="products">See pricing</a>
+        <button class="nav-cmd" type="button" data-cmdk aria-label="Open command menu">⌘K</button>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero home">
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+      <canvas class="field" id="field" aria-hidden="true"></canvas>
       <div class="wrap">
-        <div class="hero-center">
-          <p class="eyebrow">Software · Services · Growth · Localization</p>
-          <h1>The systems your business runs on, <span class="grad">built and watched</span> for you.</h1>
-          <p class="lede">Corpus is one shop with four lines: subscription software you can buy today, fixed-price services delivered on a clock, growth work for small businesses, and certified translations through <strong>Corpus Localization</strong>. Named prices. Named deadlines. No unbounded retainers.</p>
-          <p class="cta-row">
-            <a class="btn" href="products">Browse products</a>
-            <a class="btn ghost" href="growth">Grow my business</a>
-          </p>
-          <p class="fine">Public brand of Corpus Localization LLC (New Jersey). Not affiliated with Google, Amazon, Stripe, or USCIS.</p>
-        </div>
-        <div class="appwin-holder reveal" aria-hidden="true">
-          <div class="appwin">
-            <div class="chrome"><i></i><i></i><i></i><span class="url">corpus — desks · live operations</span></div>
-            <div class="lay">
-              <div class="side">
-                <a class="on" href="#">Overview</a>
-                <a href="#">Order Desk</a>
-                <a href="#">Watch Desk</a>
-                <a href="#">Applylane</a>
-                <a href="#">Rank Grid</a>
-                <a href="#">Alerts</a>
+        <div class="hero-split">
+          <div class="hero-copy">
+            <p class="eyebrow">Corpus AI · live checkout · New Jersey</p>
+            <h1>An AI company that <span class="grad">ships systems</span> you can buy today.</h1>
+            <p class="lede">Desks that watch Stripe, uptime, and listings. Deadline files on a clock. Growth work with a written quote in a day. Certified translations through <strong>Corpus Localization</strong>. Named prices. Named deadlines. No unbounded retainers.</p>
+            <p class="proof" aria-label="Live facts">
+              <span><b>10</b> live checkouts</span>
+              <span><b>60s</b> to Telegram</span>
+              <span><b>14-day</b> money-back</span>
+            </p>
+            <p class="cta-row">
+              <a class="btn" href="products">Browse products</a>
+              <a class="btn ghost" href="growth">Grow my business</a>
+            </p>
+            <p class="kbd-hint">Press <kbd>⌘</kbd><kbd>K</kbd> to jump anywhere. Public brand of Corpus Localization LLC. Not affiliated with Google, Amazon, Stripe, or USCIS.</p>
+          </div>
+
+          <div class="os" id="os" data-os>
+            <div class="os-chrome">
+              <i></i><i></i><i></i>
+              <span class="os-url">corpus · operations</span>
+              <span class="os-live"><span class="pulse"></span> live demo</span>
+            </div>
+            <div class="os-lay">
+              <div class="os-side" role="tablist" aria-label="Corpus products">
+                <button type="button" class="on" role="tab" aria-selected="true" data-os-tab="overview">Overview</button>
+                <button type="button" role="tab" aria-selected="false" data-os-tab="orders">Order Desk</button>
+                <button type="button" role="tab" aria-selected="false" data-os-tab="watch">Watch Desk</button>
+                <button type="button" role="tab" aria-selected="false" data-os-tab="apply">Applylane</button>
+                <button type="button" role="tab" aria-selected="false" data-os-tab="rank">Rank Grid</button>
+                <button type="button" role="tab" aria-selected="false" data-os-tab="alerts">Alerts</button>
               </div>
-              <div class="main2">
-                <div class="kpis">
-                  <div class="kpi"><small>Uptime checks</small><b>200 OK<em>60s cycle</em></b></div>
-                  <div class="kpi"><small>SLA clock</small><b>3h 41m<em>of 4h</em></b></div>
-                  <div class="kpi"><small>Alerts today</small><b>2<em>→ Telegram</em></b></div>
+              <div class="os-main">
+                <div class="os-view on" data-os-view="overview">
+                  <div class="kpis">
+                    <div class="kpi"><small>Uptime checks</small><b>200 OK<em>60s cycle</em></b></div>
+                    <div class="kpi"><small>SLA clock</small><b><span data-sla>3h 41m</span><em>of 4h</em></b></div>
+                    <div class="kpi"><small>Alerts today</small><b>2<em>→ Telegram</em></b></div>
+                  </div>
+                  <svg class="spark" viewBox="0 0 400 46" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,36 30,32 60,34 90,26 120,29 150,20 180,24 210,15 240,19 270,12 300,16 330,8 360,12 400,5"/></svg>
+                  <div data-os-feed>
+                    <div class="alertline"><span class="pulse"></span> Stripe payment received — SLA clock started <small>60s</small></div>
+                    <div class="alertline warn"><span class="pulse"></span> Google listing fingerprint changed — review ping <small>≤15m</small></div>
+                  </div>
+                  <p class="os-note">Demo of desks watching Corpus — not a customer feed.</p>
                 </div>
-                <svg class="spark" viewBox="0 0 400 46" preserveAspectRatio="none"><polyline points="0,36 30,32 60,34 90,26 120,29 150,20 180,24 210,15 240,19 270,12 300,16 330,8 360,12 400,5"/></svg>
-                <div class="alertline"><span class="pulse"></span> Stripe payment received — SLA clock started <small>60s alert</small></div>
-                <div class="alertline warn"><span class="pulse"></span> Google listing fingerprint changed — review ping <small>≤15 min</small></div>
+                <div class="os-view" data-os-view="orders">
+                  <div class="kpis">
+                    <div class="kpi"><small>Webhook</small><b>signed<em>whsec only</em></b></div>
+                    <div class="kpi"><small>Intake</small><b>open<em>clock running</em></b></div>
+                    <div class="kpi"><small>Price</small><b>$29<em>/mo</em></b></div>
+                  </div>
+                  <div class="alertline"><span class="pulse"></span> Payment Link hit · order desk started the 4h clock <small>60s</small></div>
+                  <div class="alertline"><span class="pulse"></span> Fail-closed signature check passed <small>live</small></div>
+                  <p class="cta-row" style="margin:8px 0 0">
+                    <a class="btn subscribe" href="https://buy.stripe.com/bJe9ALdC91aVgVR7VJco11z">Subscribe — $29/mo</a>
+                  </p>
+                </div>
+                <div class="os-view" data-os-view="watch">
+                  <div class="kpis">
+                    <div class="kpi"><small>HTTP</small><b>200<em>corpushq.co</em></b></div>
+                    <div class="kpi"><small>TLS</small><b>89d<em>to expiry</em></b></div>
+                    <div class="kpi"><small>Listing</small><b>ok<em>≤15m</em></b></div>
+                  </div>
+                  <div class="heat" aria-hidden="true">
+                    <i></i><i class="c2"></i><i></i><i class="c3"></i><i class="c2"></i><i class="c4"></i><i></i><i class="c5"></i>
+                    <i class="c2"></i><i></i><i class="c3"></i><i></i><i class="c4"></i><i class="c2"></i><i class="c5"></i><i class="c3"></i>
+                  </div>
+                  <div class="alertline"><span class="pulse"></span> Page fingerprint stable · no deface <small>60s</small></div>
+                  <p class="cta-row" style="margin:8px 0 0">
+                    <a class="btn subscribe" href="https://buy.stripe.com/4gM9AL41zcTDbBx7VJco11r">Subscribe — $12/mo</a>
+                  </p>
+                </div>
+                <div class="os-view" data-os-view="apply">
+                  <div class="kpis">
+                    <div class="kpi"><small>Credits</small><b>12/50<em>used</em></b></div>
+                    <div class="kpi"><small>ATS</small><b>Lever<em>submitted</em></b></div>
+                    <div class="kpi"><small>Price</small><b>$49<em>one-time</em></b></div>
+                  </div>
+                  <div class="credit-bar" aria-hidden="true"><i></i></div>
+                  <div class="alertline"><span class="pulse"></span> Application submitted — credit refunded on any failed submit <small>live</small></div>
+                  <p class="cta-row" style="margin:8px 0 0">
+                    <a class="btn" href="/apply/">Open Applylane</a>
+                  </p>
+                </div>
+                <div class="os-view" data-os-view="rank">
+                  <div class="kpis">
+                    <div class="kpi"><small>Grid</small><b>7×7<em>local</em></b></div>
+                    <div class="kpi"><small>Keywords</small><b>3<em>moved</em></b></div>
+                    <div class="kpi"><small>Price</small><b>$19<em>/mo</em></b></div>
+                  </div>
+                  <div class="heat" aria-hidden="true">
+                    <i class="c5"></i><i class="c4"></i><i class="c3"></i><i class="c2"></i><i></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+                    <i class="c4"></i><i class="c3"></i><i></i><i class="c2"></i><i></i><i class="c3"></i><i class="c4"></i><i class="c5"></i>
+                  </div>
+                  <p class="os-note">Paid SERP API snapshots — no proxy farms. Not a ranking guarantee.</p>
+                </div>
+                <div class="os-view" data-os-view="alerts">
+                  <div class="alertline"><span class="pulse"></span> Telegram first, email fallback <small>60s</small></div>
+                  <div class="alertline warn"><span class="pulse"></span> Second ping if an SLA clock is ignored <small>clock</small></div>
+                  <div class="alertline"><span class="pulse"></span> We run this on our own Stripe and our own site <small>dogfood</small></div>
+                  <p class="os-note">Alerts are notifications. They are not an uptime or platform-outcome guarantee.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -156,10 +235,10 @@
     <section class="alt" id="numbers">
       <div class="wrap">
         <div class="stats">
-          <div class="stat reveal"><b>10</b><span>live checkouts on this site — every one a named price</span></div>
-          <div class="stat reveal d1"><b>60s</b><span>from a Stripe webhook or downtime to a Telegram alert</span></div>
-          <div class="stat reveal d2"><b>24h</b><span>standard delivery on certified translations, 65+ languages</span></div>
-          <div class="stat reveal d3"><b>1 day</b><span>to a written fixed-scope quote on any growth job</span></div>
+          <div class="stat reveal"><b data-count="10">10</b><span>live checkouts on this site — every one a named price</span></div>
+          <div class="stat reveal d1"><b data-count="60" data-suffix="s">60s</b><span>from a Stripe webhook or downtime to a Telegram alert</span></div>
+          <div class="stat reveal d2"><b data-count="24" data-suffix="h">24h</b><span>standard delivery on certified translations, 65+ languages</span></div>
+          <div class="stat reveal d3"><b data-count="1" data-suffix=" day">1 day</b><span>to a written fixed-scope quote on any growth job</span></div>
         </div>
       </div>
     </section>
@@ -305,6 +384,15 @@
       <p class="legal">Corpus is the public brand of Corpus Localization LLC. Not affiliated with Google LLC, Amazon.com, Inc., Stripe, Inc., or USCIS. Nothing on this site is legal advice. Preparing a document is not a promise of a platform, court, ad-auction, or immigration outcome.</p>
     </div>
   </footer>
-  <script src="motion.js" defer></script>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="pointer-glow" aria-hidden="true"></div>
+  <div class="cmdk" id="cmdk" hidden>
+    <div class="cmdk-panel" role="dialog" aria-modal="true" aria-label="Command menu">
+      <input class="cmdk-input" type="search" placeholder="Jump to a product, page, or action…" aria-label="Search">
+      <ul class="cmdk-list"></ul>
+      <p class="cmdk-hint">↑↓ to move · enter to open · esc to close</p>
+    </div>
+  </div>
+  <script src="motion.js?v=10" defer></script>
 </body>
 </html>
