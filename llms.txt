@@ -1,9 +1,12 @@
 # Corpus
 
-> Corpus is the public brand of Corpus Localization LLC, a New Jersey company. One shop, four lines: subscription software, fixed-price deadline-file services, small-business growth work, and certified translations (as Corpus Localization). Named prices and delivery SLAs on everything; no outcome guarantees, no unbounded retainers, no account logins on service lines.
+> Corpus gets startups and small businesses up and running — web design, SEO/AI-search, marketing, custom outreach, and lead sourcing — backed by monitoring software and fixed-price services. Public brand of Corpus Localization LLC, New Jersey. One shop, four lines: subscription software, fixed-price deadline-file services, small-business growth work, and certified translations (as Corpus Localization). Named prices and delivery SLAs on everything; no outcome guarantees, no unbounded retainers, no account logins on service lines.
 
 ## Products (subscriptions, checkout on this site)
 - [Products & pricing](https://corpushq.co/products): Order Desk $29/mo — Stripe payment + SLA alerts (Telegram within 60s of the webhook, second ping if intake isn't marked done). Watch Desk $12/mo — up to 5 checks: HTTP uptime, SSL expiry, page-text change, Google Business Profile status, reviews. Add-ons: OpenClaw install $299 + $49/mo keep-alive, Instantly Desk $29/mo, Seller Central Desk $99/mo, Review Blast $39/mo (consent required), Rank Grid $19/mo, Card Retry $29/mo. 14-day money-back.
+- [Site Studio](https://corpushq.co/studio/): $19/mo (free tier: 10 lead searches + 3 preview sites) — find local businesses without websites from OpenStreetMap data, generate one-click preview sites, invoice clients. Subscribe: https://buy.stripe.com/6oU6ozapXg5P9tp4Jxco11I
+- [Applylane](https://corpushq.co/apply/): $49 — 50 job applications; real matching engine over 121 live Greenhouse/Lever/Ashby boards (16k+ open jobs), human-verified submission.
+- [PeopleFind](https://corpushq.co/find/): live demo (labeled sample data); $99/mo with 7-day trial at launch.
 - Product sites: https://orderdesk.corpuslocalization.com · https://watchdesk.corpuslocalization.com
 
 ## Growth (small business, fixed-scope quotes)
