@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="corpus-mark.png">
-  <link rel="stylesheet" href="styles.css?v=11">
+  <link rel="stylesheet" href="styles.css?v=12">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -66,8 +66,14 @@
               <span><b>60s</b> to Telegram</span>
               <span><b>14-day</b> money-back</span>
             </p>
+            <form class="cta-row scanform" method="post" action="/plan/scan" style="gap:0">
+              <input name="url" placeholder="yourbusiness.com" required aria-label="Your website URL"
+                     style="font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-right:0;border-radius:10px 0 0 10px;padding:13px 16px;min-width:220px;flex:1;max-width:340px">
+              <button class="btn" type="submit" style="border-radius:0 10px 10px 0">Get my free plan</button>
+            </form>
+            <p class="fine" style="margin-top:0">Paste your website — get the full audit and 30/60/90 growth plan free, in about a minute. No signup needed.</p>
             <p class="cta-row">
-              <a class="btn" href="products">Browse products</a>
+              <a class="btn ghost" href="products">Browse products</a>
               <a class="btn ghost" href="growth">Grow my business</a>
             </p>
             <p class="kbd-hint">Press <kbd>⌘</kbd><kbd>K</kbd> to jump anywhere. Public brand of Corpus Localization LLC. Not affiliated with Google, Amazon, Stripe, or USCIS.</p>
@@ -168,8 +174,8 @@
 
     <div class="ticker" aria-hidden="true">
       <div class="ticker-track">
-        <span>Site Studio <b>$19/mo</b></span><span>Order Desk <b>$29/mo</b></span><span>Watch Desk <b>$12/mo</b></span><span>Applylane Starter <b>$49</b></span><span>Certified translations <b>$19.99/page</b></span><span>GBP appeal packet <b>$149 · 4h</b></span><span>Amazon Plan of Action <b>$299 · 6h</b></span><span>VPAT Sprint <b>$1,995 · 5 days</b></span><span>Landing pages · SEO · AI search <b>quoted in 1 day</b></span>
-        <span>Site Studio <b>$19/mo</b></span><span>Order Desk <b>$29/mo</b></span><span>Watch Desk <b>$12/mo</b></span><span>Applylane Starter <b>$49</b></span><span>Certified translations <b>$19.99/page</b></span><span>GBP appeal packet <b>$149 · 4h</b></span><span>Amazon Plan of Action <b>$299 · 6h</b></span><span>VPAT Sprint <b>$1,995 · 5 days</b></span><span>Landing pages · SEO · AI search <b>quoted in 1 day</b></span>
+        <span>Corpus Plan Pro <b>$99/mo</b></span><span>Site Studio <b>$19/mo</b></span><span>Order Desk <b>$29/mo</b></span><span>Watch Desk <b>$12/mo</b></span><span>Applylane Starter <b>$49</b></span><span>Certified translations <b>$19.99/page</b></span><span>GBP appeal packet <b>$149 · 4h</b></span><span>Amazon Plan of Action <b>$299 · 6h</b></span><span>VPAT Sprint <b>$1,995 · 5 days</b></span><span>Landing pages · SEO · AI search <b>quoted in 1 day</b></span>
+        <span>Corpus Plan Pro <b>$99/mo</b></span><span>Site Studio <b>$19/mo</b></span><span>Order Desk <b>$29/mo</b></span><span>Watch Desk <b>$12/mo</b></span><span>Applylane Starter <b>$49</b></span><span>Certified translations <b>$19.99/page</b></span><span>GBP appeal packet <b>$149 · 4h</b></span><span>Amazon Plan of Action <b>$299 · 6h</b></span><span>VPAT Sprint <b>$1,995 · 5 days</b></span><span>Landing pages · SEO · AI search <b>quoted in 1 day</b></span>
       </div>
     </div>
 
@@ -180,6 +186,15 @@
           <h2>Four lines. One accountable shop.</h2>
         </div>
         <div class="bento">
+          <a class="b-card w6 reveal" href="/plan/">
+            <span class="meta">Flagship · free full plan · Pro $99/mo</span>
+            <h3>Corpus Plan — paste your site, get the whole plan</h3>
+            <p>A real audit of your website in about a minute: speed, SEO, AI-search readiness (can ChatGPT even read your site?), trust and conversion signals — then a prioritized 30/60/90 plan with every fix. All of it shown free. Pro re-audits weekly, tracks what improved, and keeps the plan current.</p>
+            <div class="b-visual">
+              <div class="alertline"><span class="pulse"></span> corpuslocalization.com scored 96/100 — 2 trust fixes queued <small>live example</small></div>
+            </div>
+            <span class="go">Run your free audit →</span>
+          </a>
           <a class="b-card w3 reveal" href="products">
             <span class="meta">Products · from $12/mo</span>
             <h3>Software that watches your business</h3>
@@ -407,6 +422,6 @@
       <p class="cmdk-hint">↑↓ to move · enter to open · esc to close</p>
     </div>
   </div>
-  <script src="motion.js?v=11" defer></script>
+  <script src="motion.js?v=12" defer></script>
 </body>
 </html>

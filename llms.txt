@@ -4,6 +4,7 @@
 
 ## Products (subscriptions, checkout on this site)
 - [Products & pricing](https://corpushq.co/products): Order Desk $29/mo — Stripe payment + SLA alerts (Telegram within 60s of the webhook, second ping if intake isn't marked done). Watch Desk $12/mo — up to 5 checks: HTTP uptime, SSL expiry, page-text change, Google Business Profile status, reviews. Add-ons: OpenClaw install $299 + $49/mo keep-alive, Instantly Desk $29/mo, Seller Central Desk $99/mo, Review Blast $39/mo (consent required), Rank Grid $19/mo, Card Retry $29/mo. 14-day money-back.
+- [Corpus Plan](https://corpushq.co/plan/): paste a website URL, get a free full audit + 30/60/90 growth plan (speed, SEO, AI-search readiness, trust, content — all real checks). Pro $99/mo: 5 sites, weekly re-audits, trends, change detection. Subscribe: https://buy.stripe.com/7sY28j7dL1aV6hddg3co11J
 - [Site Studio](https://corpushq.co/studio/): $19/mo (free tier: 10 lead searches + 3 preview sites) — find local businesses without websites from OpenStreetMap data, generate one-click preview sites, invoice clients. Subscribe: https://buy.stripe.com/6oU6ozapXg5P9tp4Jxco11I
 - [Applylane](https://corpushq.co/apply/): $49 — 50 job applications; real matching engine over 121 live Greenhouse/Lever/Ashby boards (16k+ open jobs), human-verified submission.
 - [PeopleFind](https://corpushq.co/find/): live demo (labeled sample data); $99/mo with 7-day trial at launch.
